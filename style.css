@@ -5,6 +5,11 @@
     font-family: Arial, sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     padding-top: 70px;
     background: linear-gradient(to bottom, #2b5876, #4facfe);
@@ -89,3 +94,52 @@ main {
     margin: 5px 0;
 }
 
+footer {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 100px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .jumbotron {
+        padding: 20px;
+    }
+
+    .jumbotron h1 {
+        font-size: 22px;
+    }
+
+    .jumbotron img {
+        width: 150px;
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    .potrait {
+        height: 200px;
+    }
+
+}
